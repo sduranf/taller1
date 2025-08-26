@@ -1,2 +1,24 @@
-<h1>Welcome to the About Page, {{name}}</h1>
-<h2>This is the full home page</h2>
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h1 class="card-title mb-4">About Movie Reviews</h1>
+                    <p class="card-text lead">
+                        Welcome to our movie review platform! We provide comprehensive reviews, ratings, and information about the latest movies.
+                    </p>
+                    <p class="card-text">
+                        Our team of movie enthusiasts works hard to bring you honest and detailed reviews to help you decide what to watch next.
+                    </p>
+                    <div class="mt-4">
+                        <a href="/" class="btn btn-primary me-2">Go Home</a>
+                        <a href="/news" class="btn btn-outline-primary">View News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
